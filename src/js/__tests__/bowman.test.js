@@ -1,4 +1,4 @@
-import Character from '../characters/character';
+import Bowman from '../characters/bowman';
 
 test.each([
   [1],
@@ -15,22 +15,28 @@ test.each([
 ])('%p', (name) => {
   expect(() => {
     // eslint-disable-next-line no-new
-    new Character(name);
+    new Bowman(name);
   }).toThrow();
 });
 
 test.each([
   ['Alex', {
+    attack: 25,
+    defence: 25,
     health: 100,
     level: 1,
     name: 'Alex',
+    type: 'bowman',
   }],
   ['Semen', {
+    attack: 25,
+    defence: 25,
     health: 100,
     level: 1,
     name: 'Semen',
+    type: 'bowman',
   }],
 ])('%p', (name, expected) => {
-  const result = new Character(name);
+  const result = new Bowman(name);
   expect(result).toEqual(expected);
 });
