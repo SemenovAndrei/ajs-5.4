@@ -1,4 +1,4 @@
-import Undead from '../characters/undead';
+import Magician from '../../characters/magician';
 
 test.each([
   [1],
@@ -15,28 +15,28 @@ test.each([
 ])('%p', (name) => {
   expect(() => {
     // eslint-disable-next-line no-new
-    new Undead(name);
+    new Magician(name);
   }).toThrow();
 });
 
 test.each([
   ['Alex', {
-    attack: 25,
-    defence: 25,
+    attack: 10,
+    defence: 40,
     health: 100,
     level: 1,
     name: 'Alex',
-    type: 'undead',
+    type: 'magician',
   }],
   ['Semen', {
-    attack: 25,
-    defence: 25,
+    attack: 10,
+    defence: 40,
     health: 100,
     level: 1,
     name: 'Semen',
-    type: 'undead',
+    type: 'magician',
   }],
 ])('%p', (name, expected) => {
-  const result = new Undead(name);
+  const result = new Magician(name);
   expect(result).toEqual(expected);
 });

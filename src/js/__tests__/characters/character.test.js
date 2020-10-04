@@ -1,4 +1,4 @@
-import Magician from '../characters/magician';
+import Character from '../../characters/character';
 
 test.each([
   [1],
@@ -15,28 +15,22 @@ test.each([
 ])('%p', (name) => {
   expect(() => {
     // eslint-disable-next-line no-new
-    new Magician(name);
+    new Character(name);
   }).toThrow();
 });
 
 test.each([
   ['Alex', {
-    attack: 10,
-    defence: 40,
     health: 100,
     level: 1,
     name: 'Alex',
-    type: 'magician',
   }],
   ['Semen', {
-    attack: 10,
-    defence: 40,
     health: 100,
     level: 1,
     name: 'Semen',
-    type: 'magician',
   }],
 ])('%p', (name, expected) => {
-  const result = new Magician(name);
+  const result = new Character(name);
   expect(result).toEqual(expected);
 });

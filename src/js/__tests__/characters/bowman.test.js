@@ -1,4 +1,4 @@
-import Bowman from '../characters/bowman';
+import Bowman from '../../characters/bowman';
 
 test.each([
   [1],

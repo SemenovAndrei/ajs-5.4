@@ -1,4 +1,4 @@
-import Swordsman from '../characters/swordsman';
+import Swordsman from '../../characters/swordsman';
 
 test.each([
   [1],
