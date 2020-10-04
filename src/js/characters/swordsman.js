@@ -1,9 +1,12 @@
 import Character from './character';
 
 /**
+ * @class
 * Создает персонажа с классом Swordsman
+*
+* @extends Character
 */
-export default class Swordsman extends Character {
+class Swordsman extends Character {
   constructor(name) {
     super(name);
 
@@ -12,3 +15,5 @@ export default class Swordsman extends Character {
     this.defence = 10;
   }
 }
+
+export default Swordsman;

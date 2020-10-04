@@ -1,9 +1,12 @@
 import Character from './character';
 
 /**
+ * @class
 * Создает персонажа с классом Daemon
+*
+* @extends Character
 */
-export default class Daemon extends Character {
+class Daemon extends Character {
   constructor(name) {
     super(name);
 
@@ -12,3 +15,5 @@ export default class Daemon extends Character {
     this.defence = 40;
   }
 }
+
+export default Daemon;

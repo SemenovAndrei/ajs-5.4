@@ -1,9 +1,12 @@
 import Character from './character';
 
 /**
+ * @class
 * Создает персонажа с классом Undead
+*
+* @extends Character
 */
-export default class Undead extends Character {
+class Undead extends Character {
   constructor(name) {
     super(name);
 
@@ -12,3 +15,5 @@ export default class Undead extends Character {
     this.defence = 25;
   }
 }
+
+export default Undead;

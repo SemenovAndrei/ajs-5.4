@@ -1,9 +1,12 @@
 import Character from './character';
 
 /**
+ * @class
 * Создает персонажа с классом Zombie
+*
+* @extends Character
 */
-export default class Zombie extends Character {
+class Zombie extends Character {
   constructor(name) {
     super(name);
 
@@ -12,3 +15,5 @@ export default class Zombie extends Character {
     this.defence = 10;
   }
 }
+
+export default Zombie;
