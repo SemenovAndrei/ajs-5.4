@@ -1,3 +1,4 @@
 # ajs-5.4
 
-[![Build status](https://ci.appveyor.com/api/projects/status/l6s8jmqnrj0n8l5b?svg=true)](https://ci.appveyor.com/project/i-hit/ajs-5-4)
+[![Build status](https://ci.appveyor.com/api/projects/status/6s150134n1ktown5?svg=true)](https://ci.appveyor.com/project/i-hit/ajs-5-4)
+
